@@ -30,15 +30,11 @@ for (const url of urls) {
   {
     startMs: 30520,
     durationMs: 2920,
-    startTiming: '00:00:30.520',
-    endTiming: '00:00:33.440',
     subtitle: 'At 2 AM at the train crossing,'
   },
   {
     startMs: 33440,
     durationMs: 2600,
-    startTiming: '00:00:33.440',
-    endTiming: '00:00:36.40',
     subtitle: 'I was carrying a telescope.'
   },
   ...
