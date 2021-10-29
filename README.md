@@ -1,12 +1,12 @@
-# Node Youtube Subtitles
+# Node Youtube Subtitles  
 This library allows you to obtain subtitles for a YouTube video through a link or ID without an API key.  
----
 it returns Promise, you need to use `await` to get the return value.  
-## getSubtitles()
+## getSubtitles()  
 | PARAMETERS 	| TYPE 	| OPTIONAL 	| DESCRIPTION 	|
 |---	|---	|---	|---	|
 | url 	| YoutubeURLResolvable 	| `N` 	| Get subtitles for the video based on the URL or video ID. 	|
-| options 	| Object 	| `Y` 	| You can set the subtitle language or have the timing string return.  	|  
+| options 	| Object 	| `Y` 	| You can set the subtitle language or have the timing string return.  	|    
+
 If the video ID or URL is not valid, return an empty array.  
 ---
 ### Basics
@@ -24,7 +24,7 @@ for (const url of urls) {
 }
 ```
 #### Return values 
-```json
+```
 [
   {
     startMs: 30520,
@@ -54,7 +54,7 @@ const sub = await getSubtitles(url, { lang: "ko" });
 ```
 If a language is not specified, the default value is "en".  
 #### Return values 
-```json
+```
 [
   {
     startMs: 600,
@@ -77,7 +77,7 @@ const sub = await getSubtitles(url, { timingString: true });
 }
 ```
 #### Return values 
-```json
+```
 [
   ...
   {
