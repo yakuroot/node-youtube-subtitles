@@ -1,5 +1,6 @@
 {
   "name": "node-youtube-subtitles",
+  "description": "Getting YouTube subtitles without API keys.",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Neoration/node-youtube-subtitles.git",
@@ -7,5 +8,14 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.24.0"
+  },
+  "types": "./index.d.ts",
+  "homepage": "https://github.com/Neoration/K-Language.js",
+  "bugs": {
+    "url": "https://github.com/Neoration/K-Language.js/issues",
+    "email": "neo@neoration.me"
+  },
+  "engines": {
+    "node": ">=12.0.0"
   }
 }
