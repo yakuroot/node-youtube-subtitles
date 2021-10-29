@@ -12,8 +12,8 @@ export interface YoutubeSubtitleInTiming extends YoutubeSubtitle {
 }
 
 interface NodeYoutubeSubtitles {
-  getSubtitles(url: YoutubeURLResolvable, options: { lang?: string }): YoutubeSubtitle[];
-  getSubtitles(url: YoutubeURLResolvable, options: { lang?: string, timingString: true }): YoutubeSubtitleInTiming[];
+  getSubtitles(url: YoutubeURLResolvable, options: { lang?: string }): Promise<YoutubeSubtitle[]>;
+  getSubtitles(url: YoutubeURLResolvable, options: { lang?: string, timingString: true }): Promise<YoutubeSubtitleInTiming[]>;
 }
 
 const nodeYoutubeSubtitles: NodeYoutubeSubtitles;

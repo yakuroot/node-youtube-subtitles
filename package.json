@@ -1,7 +1,7 @@
 {
   "name": "node-youtube-subtitles",
   "description": "Getting YouTube subtitles without API keys.",
-  "version": "1.0.2",
+  "version": "1.0.21",
   "main": "index.js",
   "repository": "https://github.com/Neoration/node-youtube-subtitles.git",
   "author": "Neo <65282986+Neoration@users.noreply.github.com>",
