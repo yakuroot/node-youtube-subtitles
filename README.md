@@ -106,7 +106,7 @@ const sub = await getSubtitles(url, { lang: "ko", timingString: true });
 }
 ```
 #### Return values 
-```json
+```
 [
   {
     startMs: 600,
