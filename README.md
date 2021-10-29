@@ -8,6 +8,7 @@ it returns Promise, you need to use `await` to get the return value.
 | options 	| Object 	| `Y` 	| You can set the subtitle language or have the timing string return.  	|    
 
 If the video ID or URL is not valid, return an empty array.  
+
 ---
 ### Basics
 ```ts
