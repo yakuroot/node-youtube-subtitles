@@ -40,7 +40,7 @@ exports.getSubtitles = async (url, options) => {
         }:${
           `0${Math.floor(subs.tStartMs / 6e4)}`.slice(-2)
         }:${
-          `0${Math.floor(subs.tStartMs / 1e3)}`.slice(-2)
+          `0${Math.floor((subs.tStartMs / 1e3) % 60)}`.slice(-2)
         }.${
           Math.floor(subs.tStartMs % 1e3)
         }`,
@@ -49,7 +49,7 @@ exports.getSubtitles = async (url, options) => {
         }:${
           `0${Math.floor((subs.tStartMs + subs.dDurationMs) / 6e4)}`.slice(-2)
         }:${
-          `0${Math.floor((subs.tStartMs + subs.dDurationMs) / 1e3)}`.slice(-2)
+          `0${Math.floor(((subs.tStartMs + subs.dDurationMs) / 1e3) % 60)}`.slice(-2)
         }.${
           Math.floor((subs.tStartMs + subs.dDurationMs) % 1e3)
         }`,
